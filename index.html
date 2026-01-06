@@ -20,20 +20,19 @@
     margin-bottom: 16px;
   }
 }
-   @media (max-width: 600px) {
+  @media (max-width: 600px) {
   nav .links {
-    padding-right: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
   }
 
   nav .links a {
-    display: block;
-    margin: 6px 0;
     font-size: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
   }
 }
-
-
 
   p {
     font-size: 13px;
@@ -195,6 +194,7 @@ html, body {
 
 </body>
 </html>
+
 
 
 
