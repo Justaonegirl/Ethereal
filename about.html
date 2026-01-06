@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="icon" href="ethereal.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethereal — About</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f7f6f4;
+      --text: #1c1c1c;
+      --muted: #8a8a8a;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 2.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a { text-decoration:none; color: var(--text); font-size:0.85rem; letter-spacing:0.12em; }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 4rem 4rem 6rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      padding: 2rem 4rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width:768px) {
+      header, main, footer { padding-left:2rem; padding-right:2rem; }
+      h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">ETHEREAL</a>
+    <a href="issues.html">ISSUES</a>
+    <a href="archive.html">ARCHIVE</a>
+  </header>
+
+  <main>
+    <h1>About</h1>
+    <p>
+      Ethereal is an independent digital publication exploring softness, restraint, and the space between image and meaning.
+    </p>
+    <p>
+      It exists outside trend cycles, capturing fragments of thought, visual experiments, and quiet editorial expressions.
+    </p>
+    <p>
+      This space is a pause, an archive, a quiet study of form — where content breathes and lingers, leaving room for reflection.
+    </p>
+  </main>
+
+  <footer>
+    © Ethereal
+  </footer>
+
+</body>
+</html>

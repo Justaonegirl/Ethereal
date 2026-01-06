@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="icon" href="ethereal.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethereal — Issues</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f7f6f4;
+      --text: #1c1c1c;
+      --muted: #8a8a8a;
+      --line: rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+    }
+
+    main {
+      padding: 4rem 4rem 6rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .page-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+    }
+
+    .issues {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 3rem;
+    }
+
+    .issue {
+      border-top: 1px solid var(--line);
+      padding-top: 1.5rem;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .issue:hover {
+      opacity: 0.7;
+    }
+
+    .issue-number {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .issue-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    .issue-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 320px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 2rem 4rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      header, main, footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      .page-title {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">ETHEREAL</a>
+    <a href="archive.html">ARCHIVE</a>
+  </header>
+
+  <main>
+    <h1 class="page-title">Issues</h1>
+
+    <section class="issues">
+      <div class="issue">
+        <div class="issue-number">ISSUE 001</div>
+        <div class="issue-title">Stillness</div>
+        <div class="issue-desc">An exploration of quiet moments, pauses, and the beauty of restraint.</div>
+      </div>
+
+      <div class="issue">
+        <div class="issue-number">ISSUE 002</div>
+        <div class="issue-title">Marble</div>
+        <div class="issue-desc">On permanence, sculpture, and the illusion of softness in stone.</div>
+      </div>
+
+      <div class="issue">
+        <div class="issue-number">ISSUE 003</div>
+        <div class="issue-title">Afterlight</div>
+        <div class="issue-desc">What remains when the moment has already passed.</div>
+      </div>
+
+      <div class="issue">
+        <div class="issue-number">ISSUE 004</div>
+        <div class="issue-title">Untitled</div>
+        <div class="issue-desc">A collection without explanation.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© Ethereal</span>
+    <span>Issues Archive</span>
+  </footer>
+
+</body>
+</html>

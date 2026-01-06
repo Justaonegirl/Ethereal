@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="ethereal.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethereal</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #f6f5f3;
+      --text: #111;
+      --muted: rgba(0,0,0,0.55);
+      --line: rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1.2s ease;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 28px 40px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+    }
+
+    nav .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      letter-spacing: 0.15em;
+    }
+
+    nav .links a {
+      margin-left: 28px;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+
+    nav .links a:hover {
+      opacity: 1;
+    }
+
+    /* ===== DIVIDER ===== */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--line);
+    }
+
+    /* ===== HERO ===== */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(56px, 9vw, 110px);
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      margin-bottom: 28px;
+    }
+
+    p {
+      max-width: 520px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.9;
+      color: var(--muted);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      padding: 28px 40px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* ===== MOTION ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 20px 24px;
+      }
+      footer {
+        padding: 20px 24px;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="brand">ETHEREAL</div>
+    <div class="links">
+      <a href="issues.html">ISSUES</a>
+      <a href="archive.html">ARCHIVE</a>
+      <a href="about.html">ABOUT</a>
+    </div>
+  </nav>
+
+  <div class="divider"></div>
+
+  <!-- HOME -->
+  <main>
+    <div>
+      <h1>ETHEREAL</h1>
+      <p>
+        A quiet study of form, softness, and presence — existing outside trend cycles.
+      </p>
+    </div>
+  </main>
+
+  <div class="divider"></div>
+
+  <footer>
+    <span>© Ethereal</span>
+    <span>Etherealmagazines.co@gmail.com</span>
+  </footer>
+
+</body>
+</html>
