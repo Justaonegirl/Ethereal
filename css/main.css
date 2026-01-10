@@ -145,3 +145,65 @@ html, body {
         gap: 8px;
       }
     }
+
+.home-motion {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.covers {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  opacity: 0.08;
+}
+
+.covers img {
+  width: 160px;
+  filter: grayscale(100%);
+}
+
+body {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 600px) {
+  .covers {
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollY 50s linear infinite;
+  }
+
+  @keyframes scrollY {
+    from { transform: translate(-50%, 0); }
+    to   { transform: translate(-50%, -50%); }
+  }
+}
+@media (min-width: 601px) {
+  .covers-left {
+    left: -15%;
+    top: 100%;
+    transform: rotate(45deg);
+    animation: driftUp 70s linear infinite;
+  }
+
+  .covers-right {
+    right: -15%;
+    bottom: 100%;
+    transform: rotate(45deg);
+    animation: driftDown 70s linear infinite;
+  }
+
+  @keyframes driftUp {
+    from { transform: rotate(45deg) translateY(0); }
+    to   { transform: rotate(45deg) translateY(-200%); }
+  }
+
+  @keyframes driftDown {
+    from { transform: rotate(45deg) translateY(0); }
+    to   { transform: rotate(45deg) translateY(200%); }
+  }
+}
